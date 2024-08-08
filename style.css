@@ -119,19 +119,22 @@ ol li {
 }
 
 .contact-description {
-  padding: 20px;
-  font-size: 1.5em;
+  padding: 30px;
+  font-size: 1.2em;
   width: 80%;
   margin: auto;
   background: #fff;
   border: 1px solid #2222229f;
+  box-shadow: 1px 1px 10px #7070704f;
+  border-radius: 4px;
+  color: #1d1d1dde;
 }
 .contact-card-container {
   text-align: center;
 }
 
 .contact-card-holder {
-  margin: auto 60px;
+  margin: auto 60px 30px 60px;
   width: 45%;
   overflow: hidden;
   background-color: rgba(116, 113, 113, 0.281);
@@ -158,6 +161,38 @@ ol li {
   margin: 30px auto 10px auto;
   box-shadow: 2px 2px 25px #103613;
   border-radius: 6px;
+}
+
+.user-information {
+  padding: 30px;
+}
+
+.user-information legend {
+  color: #283618;
+}
+
+.user-information label,
+input {
+  padding: 3px;
+  border: none;
+  outline: none;
+}
+
+.user-information label {
+  font-weight: 400;
+  color: rgba(37, 37, 37, 0.781);
+}
+
+.user-information input {
+  margin: 10px 0px 20px 0px;
+  border-radius: 5px;
+}
+
+.user-information input:hover {
+  border: 0.5px solid rgba(0, 0, 0, 0.349);
+}
+
+#submit-button {
 }
 
 @media screen and (max-width(900px)) {
