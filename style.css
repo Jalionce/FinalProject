@@ -110,7 +110,13 @@ ol li {
   transition-property: all;
 } */
 
+.container-bg {
+  /* background: #fff; */
+  margin-top: -30px;
+}
+
 .contact-title {
+  padding: 10px;
   margin: 30px auto 10px auto;
   font-size: 2.5em;
   text-align: center;
@@ -123,7 +129,11 @@ ol li {
   font-size: 1.2em;
   width: 80%;
   margin: auto;
-  background: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.781),
+    rgba(200, 120, 1, 0.589)
+  );
   border: 1px solid #2222229f;
   box-shadow: 1px 1px 10px #7070704f;
   border-radius: 4px;
@@ -135,9 +145,10 @@ ol li {
 
 .contact-card-holder {
   margin: auto 60px 30px 60px;
+  color: white;
   width: 45%;
   overflow: hidden;
-  background-color: rgba(116, 113, 113, 0.281);
+  background-color: #000000d8;
   padding: 20px;
   height: 325px;
   border: 1px solid #a3a3a379;
@@ -166,15 +177,15 @@ ol li {
   padding: auto 30px;
   overflow: hidden;
   margin: 30px auto 10px auto;
-  box-shadow: 2px 2px 25px #103613;
+  box-shadow: 2px 2px 25px #39501f;
   border-radius: 6px;
 }
 
 .user-information {
   padding: 30px;
   background: linear-gradient(
-    to right,
-    rgba(3, 200, 5, 0.1),
+    to left,
+    rgba(255, 255, 255, 0.781),
     rgba(200, 120, 1, 0.589)
   );
   box-shadow: 1px 1px 10px #283618;
@@ -224,5 +235,9 @@ input {
 @media screen and (max-width(900px)) {
   body {
     flex-wrap: wrap;
+  }
+
+  .contact-cards img {
+    overflow: visible;
   }
 }
