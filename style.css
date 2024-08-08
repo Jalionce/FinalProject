@@ -92,3 +92,76 @@ ol {
 ol li {
   list-style-type: disc;
 }
+
+/* About */
+
+#about-page-card-container {
+  background-color: white;
+  display: flex;
+  margin: 20px;
+}
+
+/* Contact */
+
+/* .contact-transition {
+  transition-duration: 2.5s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  transition-property: all;
+} */
+
+.contact-title {
+  margin: 30px auto 10px auto;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.contact-description {
+  padding: 20px;
+  font-size: 1.5em;
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #2222229f;
+}
+.contact-card-container {
+  text-align: center;
+}
+
+.contact-card-holder {
+  margin: auto 60px;
+  width: 45%;
+  overflow: hidden;
+  background-color: rgba(116, 113, 113, 0.281);
+  padding: 20px;
+  height: 325px;
+  border: 1px solid #a3a3a379;
+  border-radius: 6px;
+  box-shadow: 1px 1px 25px #464646d8;
+}
+
+.contact-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 2.5%;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-cards img {
+  height: 200px;
+  padding: auto 30px;
+  overflow: hidden;
+  margin: 30px auto 10px auto;
+  box-shadow: 2px 2px 25px #103613;
+  border-radius: 6px;
+}
+
+@media screen and (max-width(900px)) {
+  body {
+    flex-wrap: wrap;
+  }
+}
