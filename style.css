@@ -152,6 +152,13 @@ ol li {
   padding-top: 2.5%;
   width: 80%;
   margin: auto;
+  border-left: 2px solid rgba(61, 61, 61, 0.623);
+  border-right: 2px solid rgba(61, 61, 61, 0.623);
+}
+
+.contact-cards a {
+  text-decoration: none;
+  color: #ca6702;
 }
 
 .contact-cards img {
@@ -165,6 +172,15 @@ ol li {
 
 .user-information {
   padding: 30px;
+  background: linear-gradient(
+    to right,
+    rgba(3, 200, 5, 0.1),
+    rgba(200, 120, 1, 0.589)
+  );
+  box-shadow: 1px 1px 10px #283618;
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: auto;
 }
 
 .user-information legend {
@@ -180,7 +196,8 @@ input {
 
 .user-information label {
   font-weight: 400;
-  color: rgba(37, 37, 37, 0.781);
+  color: #283618;
+  text-decoration: underline;
 }
 
 .user-information input {
@@ -193,6 +210,15 @@ input {
 }
 
 #submit-button {
+  margin: 0 20px 0 70px;
+  width: 70px;
+  padding: 4px;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+  background: #ca6702;
+  color: #fff;
 }
 
 @media screen and (max-width(900px)) {
