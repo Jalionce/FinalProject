@@ -104,6 +104,7 @@ ol li {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: brightness(30%);
+  color: #fff;
 }
 
 .about-nav {
@@ -123,6 +124,11 @@ ol li {
   transition-duration: 3s;
   transition-timing-function: linear;
   transition-delay: 1s;
+}
+
+.intro-about {
+  margin: 20px 0 40px 0;
+  font-size: larger;
 }
 
 #about-page-card-container {
@@ -150,6 +156,7 @@ ol li {
   height: 400px;
   box-shadow: 5px 5px 25px #000000;
   border-radius: 6px;
+  margin-bottom: 20px;
 }
 
 .about-page-list {
@@ -157,11 +164,58 @@ ol li {
   padding: 10px;
   background: transparent;
   backdrop-filter: blur(30px);
+  margin-bottom: 20px;
 }
 
 .about-page-list h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+.first-card,
+.third-card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 5px 5px 25px black;
+}
+
+.second-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 5px 5px 25px black;
+}
+
+.first-card,
+.second-card,
+.third-card {
+  margin: 30px 0;
+}
+
+.about-card-img {
+  height: 250px;
+  box-shadow: 10px 20px 35px black;
+}
+
+.end-cardtainer {
+  padding: 10px 0px 10px 0;
+  font-size: larger;
+  margin: auto;
+  width: 700px;
+}
+
+.end-cardtainer p {
+  padding: 20px;
+  margin: 50px auto 15px auto;
+  text-shadow: 1px 1px 2px rgb(42, 85, 14), 0 0 1em rgb(153, 84, 6),
+    0 0 0.2em rgb(73, 129, 27);
+}
+
+.end-about-card-fp {
+  text-decoration: underline;
 }
 /* Contact */
 
