@@ -45,7 +45,7 @@ nav a:hover {
   color: #ca6702;
 }
 
-/* Home Page */
+/* / Home Page / */
 
 #homepage-container {
   display: flex;
@@ -93,22 +93,24 @@ ol li {
   list-style-type: disc;
 }
 
-/* About */
+/ About /
 
 #about-page-card-container {
   background-color: white;
   display: flex;
-  margin: 20px;
+  margin: 60px;
+  text-align: center;
+
 }
 
-/* Contact */
+ Contact 
 
-/* .contact-transition {
+/ .contact-transition {
   transition-duration: 2.5s;
   transition-timing-function: linear;
   transition-delay: 0s;
   transition-property: all;
-} */
+} /
 
 .contact-title {
   margin: 30px auto 10px auto;
@@ -193,7 +195,11 @@ input {
 }
 
 #submit-button {
+  /* testimonies */
+*P{
+  flex: 10px;
 }
+
 
 @media screen and (max-width(900px)) {
   body {
