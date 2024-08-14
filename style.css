@@ -43,17 +43,23 @@ nav {
 }
 
 nav a:hover {
-  color: #be3971;
+  color: #709644;
 }
 
 /* Home Page */
+
+.has-bg-image {
+  background-color: #221e1e;
+}
 
 #homepage-container {
   display: flex;
   max-width: 2000px;
   height: max-content;
   margin: 40px 20px 20px 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 30px;
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.664); */
 }
 
 #homepage-img {
@@ -73,7 +79,7 @@ nav a:hover {
 #homepage-description h2 {
   font-size: 3em;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: -10px;
   /* transition-duration: 5s;
   transition-delay: 0s;
   transition-timing-function: ease-in;
@@ -87,6 +93,7 @@ nav a:hover {
 
 #homepage-last-paragraph {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 ol {
@@ -102,13 +109,16 @@ ol li {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
+  width: 1309px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.664);
 }
 .has-backdrop {
   backdrop-filter: blur(7px);
   display: flex;
-  margin: 60px auto 0px auto;
+  margin: -20px auto 0px auto;
   background: rgba(0, 0, 0, 0.295);
-  /* width: 1309px; */
+
   height: fit-content;
   justify-content: center;
   align-items: center;
@@ -130,6 +140,7 @@ ol li {
     0 0 0.2em rgba(0, 0, 0, 0.082);
   /* color: rgb(124, 124, 124); */
   font-weight: 600;
+  border-radius: 6px;
 }
 
 .statements h1 {
@@ -147,7 +158,7 @@ ol li {
 .symbols-grid {
   display: grid;
   /* width: 50%; */
-  font-size: 4rem;
+  font-size: 3.5rem;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
   padding: 60px;
@@ -170,6 +181,7 @@ ol li {
   grid-column-start: 4;
   grid-column-end: 5;
 }
+
 .fa-network-wired {
   grid-column-start: 3;
   grid-row-start: 2;
@@ -207,10 +219,6 @@ ol li {
 .fa-js-square {
   grid-column-start: 2;
   grid-row-start: 3;
-}
-
-#home-footer {
-  margin-top: -40px;
 }
 
 /* About */
