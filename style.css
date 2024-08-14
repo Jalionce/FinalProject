@@ -46,7 +46,6 @@ nav a:hover {
 }
 
 /* / Home Page / */
-
 #homepage-container {
   display: flex;
   max-width: 2000px;
@@ -173,7 +172,7 @@ ol li {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgb (255, 255, 255, 0.06);
   box-shadow: 5px 5px 25px black;
 }
 
