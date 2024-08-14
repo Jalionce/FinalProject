@@ -14,11 +14,12 @@ header {
   justify-content: space-between;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 header h1 {
   padding: 20px;
-  color: #ca6702;
+  color: #ffffff;
   font-size: 1.5em;
 }
 
@@ -42,7 +43,7 @@ nav {
 }
 
 nav a:hover {
-  color: #ca6702;
+  color: #be3971;
 }
 
 /* Home Page */
@@ -96,6 +97,121 @@ ol {
 ol li {
   list-style-type: disc;
 }
+.statement-section {
+  background: url(./assets/html-bg-index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.has-backdrop {
+  backdrop-filter: blur(7px);
+  display: flex;
+  margin: 60px auto 0px auto;
+  background: rgba(0, 0, 0, 0.295);
+  /* width: 1309px; */
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+.statements {
+  display: flex;
+  flex-direction: column;
+  margin: auto 20px;
+  align-items: center;
+  padding: 10px;
+  /* font-size: 1.2rem; */
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.664);
+  background: rgba(255, 255, 255, 0.541);
+  /* background: white; */
+  width: 400px;
+  height: fit-content;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.13), 0 0 1em rgba(0, 0, 0, 0.158),
+    0 0 0.2em rgba(0, 0, 0, 0.082);
+  /* color: rgb(124, 124, 124); */
+  font-weight: 600;
+}
+
+.statements h1 {
+  margin: 10px 0 7px 0;
+  text-transform: uppercase;
+  font-weight: 200;
+  /* font-size: 3rem; */
+}
+
+.statements p {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.symbols-grid {
+  display: grid;
+  /* width: 50%; */
+  font-size: 4rem;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  padding: 60px;
+  margin-right: 40px;
+  justify-items: center;
+  align-items: center;
+  /* row-gap: 50px; */
+  /* border: 2px solid black; */
+  /* background-color: #283618; */
+  color: #ffffff;
+  row-gap: 50px;
+  column-gap: 60px;
+}
+
+.fa-window-restore {
+  grid-column-start: 4;
+}
+
+#fa-wifi {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.fa-network-wired {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.fa-laptop-code {
+  grid-row-start: 4;
+  grid-column-start: 4;
+}
+
+.fa-code-branch {
+  grid-row-start: 4;
+  grid-column-start: 3;
+}
+
+.fa-terminal {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.fa-folder {
+  grid-row-start: 4;
+  grid-column-start: 1;
+}
+
+.fa-html5 {
+  grid-column-start: 4;
+}
+
+.fa-css3-alt {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.fa-js-square {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+#home-footer {
+  margin-top: -40px;
+}
 
 /* About */
 
@@ -111,6 +227,11 @@ ol li {
   z-index: 1;
 }
 
+.about-page-main {
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0),
+    0 0 0.2em rgb(0, 0, 0);
+}
+
 .about-title {
   color: #fff;
   font-size: 3rem;
@@ -118,7 +239,7 @@ ol li {
   text-align: center;
   margin-top: 20px;
   box-shadow: 5px 5px 25px #000000;
-  text-shadow: #ca6702 1px 0 10px;
+  text-shadow: #663300 1px 0 10px;
   letter-spacing: 3px;
   transition-property: all;
   transition-duration: 3s;
@@ -131,14 +252,23 @@ ol li {
   font-size: larger;
 }
 
+#intro-card {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#intro-card p {
+  margin-left: 20px;
+}
+
 #about-page-card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
   color: white;
-  text-shadow: 1px 1px 2px rgb(42, 85, 14), 0 0 1em rgb(153, 84, 6),
-    0 0 0.2em rgb(73, 129, 27);
 }
 
 .about-card {
@@ -146,8 +276,6 @@ ol li {
 }
 .about-card p {
   text-align: center;
-  background: transparent;
-  backdrop-filter: blur(50px);
   width: 578px;
   padding: 10px;
 }
@@ -162,14 +290,22 @@ ol li {
 .about-page-list {
   width: 500px;
   padding: 10px;
-  background: transparent;
-  backdrop-filter: blur(30px);
   margin-bottom: 20px;
 }
 
 .about-page-list h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+#second-intro-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+  background: #46464629;
+  box-shadow: 10px 10px 25px black;
 }
 
 .first-card,
@@ -210,8 +346,8 @@ ol li {
 .end-cardtainer p {
   padding: 20px;
   margin: 50px auto 15px auto;
-  text-shadow: 1px 1px 2px rgb(42, 85, 14), 0 0 1em rgb(153, 84, 6),
-    0 0 0.2em rgb(73, 129, 27);
+  /* text-shadow: 1px 1px 2px rgb(21, 53, 0), 0 0 1em rgb(109, 58, 0),
+    0 0 0.2em rgb(25, 56, 0); */
 }
 
 .end-about-card-fp {
