@@ -513,6 +513,65 @@ input {
 
 /* Testimonies */
 
+.page-section {
+  display: flex;
+  padding: 60px 40px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.section1 {
+  background-image: linear-gradient(
+      rgb(000, 000, 000, 30%),
+      rgb(000, 000, 000, 30%)
+    ),
+    url("assets/markus-spiske-hqCEQTc5gZA-unsplash 1.png");
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  /* max-width: 44%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card-body {
+  margin: 0 30px;
+  align-items: start;
+}
+
+.card-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.card-text {
+  font-size: 1.25em;
+  /* padding: 20px;
+  margin: auto; */
+}
+.section2 {
+  /background-color: white;
+  /justify-content: space-evenly;
+}
+.page-section {
+  background-image: linear-gradient rgb(192, 147, 192);
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example-jali {
+  height: 400px;
+  padding: 20px;
+}
+
+.example-comment {
+  font-size: smaller;
+}
 .footer {
   background: #283618;
   width: 100%;
