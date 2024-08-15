@@ -1,6 +1,6 @@
 .page-section {
   display: flex;
-  padding: 60px 30px;
+  padding: 60px 40px;
   justify-content: space-between;
 }
 .section1 {
@@ -12,8 +12,11 @@
 }
 .card {
   background-color: white;
-  padding: 50px;
-  max-width: 50%;
+  padding: 44px;
+  max-width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title {
@@ -23,8 +26,8 @@
   font-size: 1.5em;
 }
 .section2 {
-  background-color: white;
-  justify-content: space-between;
+  /background-color: white;
+  /justify-content: space-evenly;
 }
 .page-section {
   background-image: linear-gradient rgb(192, 147, 192);
