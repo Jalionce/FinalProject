@@ -104,6 +104,7 @@ ol {
 ol li {
   list-style-type: disc;
 }
+
 .statement-section {
   background: url(./assets/html-bg-index.jpg);
   background-repeat: no-repeat;
@@ -113,6 +114,7 @@ ol li {
   margin: 20px auto;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.664);
 }
+
 .has-backdrop {
   backdrop-filter: blur(7px);
   display: flex;
@@ -123,6 +125,7 @@ ol li {
   justify-content: center;
   align-items: center;
 }
+
 .statements {
   display: flex;
   flex-direction: column;
@@ -282,6 +285,7 @@ ol li {
 .about-card {
   /* width: 500px;*/
 }
+
 .about-card p {
   text-align: center;
   width: 578px;
@@ -337,6 +341,15 @@ ol li {
 .second-card,
 .third-card {
   margin: 30px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.first-card p,
+.second-card p,
+.third-card p {
+  width: 500px;
+  margin: auto;
 }
 
 .about-card-img {
