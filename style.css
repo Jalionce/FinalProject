@@ -515,7 +515,6 @@ input {
 
 .page-section {
   display: flex;
-  padding: 60px 40px;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -527,35 +526,80 @@ input {
     url("assets/markus-spiske-hqCEQTc5gZA-unsplash 1.png");
 }
 .card {
-  background-color: white;
+  background-color: #f7f1d4ee;
   padding: 20px;
   /* max-width: 44%; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 20px;
+  margin: 50px 0;
+}
+
+#absia-text {
+  flex-direction: row-reverse;
 }
 
 .card-body {
-  margin: 0 30px;
-  align-items: start;
+  width: 350px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .card-title {
   font-size: 2em;
   margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: smaller;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
 .card-text {
   font-size: 1.25em;
+  border-bottom: 1px solid black;
+  text-align: center;
   /* padding: 20px;
   margin: auto; */
 }
-.section2 {
-  /background-color: white;
-  /justify-content: space-evenly;
+
+.card-image {
+  box-shadow: 5px 5px 15px black;
 }
+.section2 {
+  background-color: rgba(255, 255, 255, 0.425);
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  /* width: fit-content; */
+}
+
+.section2 p {
+  /* width: 400px; */
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+#section2-text-wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+#section2-text-wrap p {
+  border: none;
+  text-align: start;
+}
+
 .page-section {
   background-image: linear-gradient rgb(192, 147, 192);
+}
+
+.bottom-picture-testimony {
+  height: 400px;
+  width: 500px;
+  box-shadow: 5px 5px 25px black;
 }
 
 .img-container {
@@ -564,14 +608,25 @@ input {
   align-items: center;
 }
 
+#jali-card-text {
+  display: flex;
+  flex-direction: column-reverse;
+  /* background-color: white; */
+  padding: 40px;
+}
+
 .example-jali {
+  box-shadow: 5px 5px 15px black;
   height: 400px;
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .example-comment {
   font-size: smaller;
 }
+
+/* Footer */
+
 .footer {
   background: #283618;
   width: 100%;
