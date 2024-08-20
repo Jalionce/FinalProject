@@ -6,6 +6,7 @@
 
 body {
   background-color: #d6ce93;
+  max-width: 1350px;
 }
 
 header {
@@ -631,7 +632,7 @@ input {
 
 .footer {
   background: #283618;
-  width: 100%;
+  /* width: 100%; */
   margin: 40px 0 0 0;
   color: white;
 }
@@ -679,12 +680,29 @@ input {
   font-size: x-small;
 }
 
-@media screen and (max-width(900px)) {
+@media (max-width(1200px)) {
   body {
     flex-wrap: wrap;
   }
 
   .contact-cards img {
     overflow: visible;
+  }
+}
+
+@media (max-width(800px)) {
+  body {
+    max-width: 786px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  nav a {
+    display: hidden;
+  }
+
+  .footer-container {
+    width: 786px;
+    margin: 0;
   }
 }
