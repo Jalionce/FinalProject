@@ -680,7 +680,7 @@ input {
   font-size: x-small;
 }
 
-@media (max-width(1200px)) {
+@media (max-width: 1200px) {
   body {
     flex-wrap: wrap;
   }
@@ -690,11 +690,11 @@ input {
   }
 }
 
-@media (max-width(800px)) {
+@media (max-width: 800px) {
   body {
     max-width: 786px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   nav a {
