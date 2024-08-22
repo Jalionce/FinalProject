@@ -13,20 +13,29 @@
     />
   </head>
   <body class="about-page-bd">
-    <header class="about-nav">
-      <h1>Introduction to Web Development</h1>
-
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="#">About</a>
-        <a href="./Testimonies.html">Testimony</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+    <header>
+      <div class="brand">
+        <div class="logo"><i class="fas fa-igloo"></i></div>
+        <h1>Introduction to Web Development</h1>
+      </div>
+      <div class="hide-mobile">
+        <a class="menu-icon" href="#">&#9776;</a>
+      </div>
+      <div class="menu close">
+        <section>
+          <nav>
+            <a href="./index.html">Home</a>
+            <a href="#">About</a>
+            <a href="./Testimonies.html">Testimony</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </section>
+      </div>
     </header>
 
     <!-- <h1 class="about-title">ABOUT</h1> -->
 
-    <main class="about-page-main0">
+    <main class="about-page-main">
       <section id="about-page-card-container">
         <section class="about-card">
           <section id="intro-card">
@@ -179,7 +188,11 @@
             <section>
               <h3>Resources</h3>
               <ul>
-                <li><a href="x">Code Academy</a></li>
+                <li>
+                  <a href="https://www.codeacademy.com" target="_blank"
+                    >Code Academy</a
+                  >
+                </li>
                 <li>
                   <a
                     href="https://www.coursera.org/courses?query=coding"
@@ -188,13 +201,23 @@
                   >
                 </li>
                 <li>
-                  <a href="https://www.freecodecamp.org" target="_blank"
+                  <a href="https://www.freecodecamp.org/" target="_blank"
                     >Free Code Camp</a
                   >
                 </li>
-                <li><a href="x">Figma</a></li>
-                <li><a href="x">The Odin Project</a></li>
-                <li><a href="x">W3Schools</a></li>
+                <li>
+                  <a href="https://www.figma.com/" target="_blank">Figma</a>
+                </li>
+                <li>
+                  <a href="https://www.theodinproject.com/" target="_blank"
+                    >The Odin Project</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/" target="_blank"
+                    >W3Schools</a
+                  >
+                </li>
               </ul>
             </section>
           </nav>
@@ -202,5 +225,13 @@
         <div class="copyright">© JALABSIA, Inc.</div>
       </div>
     </footer>
+
+    <script>
+      const navMenu = document.querySelector(".menu");
+      const hamMenu = document.querySelector(".menu-icon");
+      hamMenu.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
