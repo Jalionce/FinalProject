@@ -806,4 +806,18 @@ input {
   .contact-cards img {
     overflow: visible;
   }
-}
+}@media (max-width: 800px) {
+  body {
+    max-width: 786px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    display: hidden;
+  }
+
+  .footer-container {
+    width: 786px;
+    margin: 0;
+  }
